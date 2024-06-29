@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BenJaponya offers comprehensive support services for Turkish residents in Japan, including visa application, Istanbul tourism guides, residential assistance, and exclusive shopping experiences.">
+    <title>BenJaponya</title>
+    
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0;
+            list-style-type: none;
+            flex-wrap: wrap;
+        }
+        #menu, #menu2 {
+            display: flex;
+        }
+        #menu li, #menu2 li {
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        #menu {
+            align-items: center;
+            margin-right: auto;
+            margin-left: auto;
+
+        }
+        #menu li {
+            margin-right: 20px;
+        }
+        #menu li:last-child {
+            margin-right: 0;
+        }
+        #menu2 {
+            align-items: center;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+            color: #fff;
+            text-align: center;
+            background-image: url('./img/istabul.jpg');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: multiply;
+        }
+        #tr {
+            width: 200px;
+            height: auto;
+        }
+        .name {
+            font-size: 2rem;
+            margin: 0 20px;
+        }
+        li img {
+            height: 30px;
+        }
+        nav {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+        nav li {
+            list-style: none;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        nav ul li a {
+            color: #ffffff; /* Ensures links are also white */
+            text-decoration: none; /* Removes underline from links */
+        }
+        .inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .box, .box.reverse {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px 0;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .box {
+            flex-direction: row;
+        }
+        .content-container {
+            display: flex;
+            flex-grow: 1;
+            min-width: 0; 
+        }
+        .box__body, .box__image {
+            flex: 1;
+        }
+        main {
+            flex: 3;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        
+        .box__image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .inner .box:nth-child(2) .box__image,
+        .inner .box:nth-child(4) .box__image {
+            margin-right: 20px; /* Adds space on the right of the image */
+        }
+        @media (max-width: 768px) {
+            .box, .box.reverse {
+                flex-direction: column;
+            }
+            .box__image, .box.reverse .box__image {
+                order: -1;
+            }
+            .box__body, .box.reverse .box__body {
+                order: 1;
+            }
+            #menu, #menu2 {
+            display: block;
+            text-align: center;
+            }
+            #menu li, #menu2 li {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="./img/trjp.png" alt="Logo" id="tr">
+            <div class="name">俺Japonyaだもん</div>
+            
+    </header>
+    <nav>
+        <ul id="list">
+            <div id="menu">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="benjaponyaNews.html">ニュース</a></li>
+                <li><a href="benjaponyaBlog.html">ブログ</a></li>
+                <li><a href="benjaponyaTips.html">豆知識</a></li>
+                <li><a href="contact.php">問い合わせ</a></li>
+            </div>
+            <div id="menu2">
+                <li>
+                    <a href="https://youtube.com/@benjaponya?si=upaHXSwsehbNQ5Ol" target="_blank" class="youtube-button">
+                    <img src="./img/youtubelogo.png" alt="Subscribe to our YouTube channel" class="youtube">
+                </a>
+                </li>
+                <li>
+                <a href="https://www.instagram.com/benjaponya" target="_blank" class="instagram-button">
+                    <img src="./img/Instagramlogo.png" alt="Follow us on Instagram" class="insta" >
+                </a>
+                </li>
+                <li>
+                <a href="https://lin.ee/kMhtJuT" target="_blank" class="LINE-button">
+                    <img src="./img/LINElogo.png" alt="Connect on LINE" class="line">
+                </a>
+                </li>
+                <li>
+                <a href="https://www.facebook.com/profile.php?id=61560351154328" target="_blank" class="LINE-button">
+                    <img src="./img/Facebooklogo.png" alt="Follow us on Facebook" class="Facebook">
+                </a>
+                </li>
+                <li>
+                <a href="https://x.com/benjaponya7" target="_blank" class="LINE-button">
+                    <img src="./img/xlogo1.png" alt="Follow us on x" class="x">
+                </a>
+                </li>
+                <li>
+                <a href="https://x.com/benjaponya7" target="_blank" class="LINE-button">
+                    <img src="./img/xlogo1.png" alt="Follow us on x" class="x">
+                </a>
+                </li>
+            </div>
+        </ul>
+    </nav>
+    <main>
+        <section class="inner">
+            <article class="box">
+                <div class="box__body">
+                    <h2 class="box__ttl">ビザサポート&翻訳、通訳</h2>
+                    <p class="box__txt">
+                        当社のビザサポートサービスは、トルコでの新生活をスムーズに始めるために全力でサポートします。<br>
+
+                        <b>イカメット（居住許可証）申請サポート</b><br>
+                        トルコでの長期滞在にはイカメットが必要です。当社は以下のステップでサポートします。
+                        <ul style="list-style-position: inside; padding-left: 20px; list-style-type: disc;">
+                            <li>必要書類の案内と準備</li>
+                            <li>申請書の記入サポート</li>
+                            <li>オンライン予約の手配</li>
+                            <li>書類の翻訳サービス</li>
+                            <li>役所訪問時の同行</li>
+                        </ul>
+                        <b>ビザ申請サポート</b><br>
+                        トルコへの入国ビザ取得もお任せください。
+                        <ul style="list-style-position: inside; padding-left: 20px; list-style-type: disc;">
+                            <li>ビザの種類の説明と条件の案内</li>
+                            <li>申請書の作成サポート</li>
+                            <li>書類チェック</li>
+                            <li>面接準備</li>
+                        </ul>
+
+                        <b>当社を選ぶ理由</b>
+                        <ul style="list-style-position: inside; padding-left: 20px; list-style-type: disc;">
+                        <li>専門知識と経験豊富なチームによるサポート</li>
+                        <li>個別対応とカスタマイズされたサポート</li>
+                        <li>多くの成功事例とお客様の信頼</li>
+                        </ul>
+
+                        
+                                            
+                    </p>
+                </div>
+                <figure class="box__image">
+                    <img src="./img/turkeyport.jpg" alt="Sushi chef preparing sushi">
+                </figure>
+            </article>
+            <article class="box reverse">
+                <figure class="box__image">
+                    <img src="./img/turkeyballon.jpg" alt="Traditional sushi preparation techniques">
+                </figure>
+                <div class="box__body">
+                    <h2 class="box__ttl">イスタンブール観光ガイド</h2>
+                        <p class="box__txt">
+                            当社の観光サポートサービスは、イスタンブールでの素晴らしい旅を実現するために全力でサポートします。<br>
+
+                            <b>歴史的名所の案内</b><br>
+                            イスタンブールには数多くの歴史的名所があります。当社は以下のステップでサポートします。
+                            <ul style="list-style-position: inside; padding-left: 20px; list-style-type: disc;">
+                                <li>アヤソフィア、ブルーモスク、トプカプ宮殿などの紹介</li>
+                                <li>各名所の歴史と文化の解説</li>
+                                <li>交通手段やガイドツアーの手配</li>
+                                <li>ショッピングスポットの案内</li>
+                            </ul>
+
+                            <b>文化体験サポート</b><br>
+                            イスタンブールの豊かな文化を体験してください。当社は以下のサポートを提供します。
+                            <ul style="list-style-position: inside; padding-left: 20px; list-style-type: disc;">
+                                <li>ローカルイベントやフェスティバルの情報提供</li>
+                                <li>ターキッシュバスや料理教室の手配</li>
+                                <li>歴史的建造物や博物館の案内</li>
+                                <li>グランドバザールやエジプシャンバザールの案内</li>
+                            </ul>
+
+                            <b>美食の旅</b><br>
+                            イスタンブールは美食の街でもあります。当社は以下のサポートを提供します。
+                            <ul style="list-style-position: inside; padding-left: 20px; list-style-type: disc;">
+                                <li>おすすめレストランや隠れた名店の紹介</li>
+                                <li>ストリートフードツアーの手配</li>
+                                <li>料理教室の手配</li>
+                            </ul>
+
+                            
+                        </p>     
+                </div>
+            </article>
+            <article class="box">
+                <div class="box__body">
+                    <h2 class="box__ttl">住居サポート</h2>
+                    <p class="box__txt">
+                        当社の住居サポートサービスは、イスタンブールでの快適な生活を実現するために全力でサポートします。<br>
+                    
+                        <b>住居選びのサポート</b><br>
+                        イスタンブールで理想の住まいを見つけるために、以下のサポートを提供します。
+                        <ul style="list-style-position: inside; padding-left: 20px; list-style-type: disc;">
+                            <li>希望条件に合った物件の紹介</li>
+                            <li>地域情報の提供とアドバイス</li>
+                            <li>物件見学の手配と同行</li>
+                            <li>賃貸契約のサポート</li>
+                        </ul>
+                    
+                        <b>引越しサポート</b><br>
+                        スムーズな引越しのために、以下のサポートを提供します。
+                        <ul style="list-style-position: inside; padding-left: 20px; list-style-type: disc;">
+                            <li>引越し業者の手配と比較</li>
+                            <li>荷物の梱包と運搬の手配</li>
+                            <li>引越しスケジュールの管理</li>
+                            <li>新居での初期設定サポート（インターネット、電気、水道など）</li>
+                        </ul>
+                    
+                        <b>生活サポート</b><br>
+                        新生活をスムーズにスタートできるよう、以下のサポートを提供します。
+                        <ul style="list-style-position: inside; padding-left: 20px; list-style-type: disc;">
+                            <li>地域の生活情報の提供（スーパー、病院、公共交通機関など）</li>
+                            <li>家具・家電の購入サポート</li>
+                            <li>ご近所とのコミュニケーションサポート</li>
+                        </ul>
+                    
+                        
+                    </p>
+                </div>
+                <figure class="box__image">
+                    <img src="./img/turkeyfood.jpg" alt="Elegant sushi table setting">
+                </figure>
+            </article>
+            <article class="box reverse">
+                <figure class="box__image">
+                    <img src="./img/turkeyguy.jpg" alt="Fresh ingredients at the market">
+                </figure>
+                <div class="box__body">
+                    <h2 class="box__ttl">買い付けネットショップ</h2>
+                        <p class="box__txt">
+                            当社の買い付けサービスは、お客様が快適にショッピングを楽しめるよう全力でサポートします。<br>
+
+                            <b>商品ラインナップ</b><br>
+                            幅広い商品を取り揃え、お客様のニーズに応えるため、以下の商品を提供しています。
+                            <ul style="list-style-position: inside; padding-left: 20px; list-style-type: disc;">
+                                <li>アクセサリー</li>
+                                <li>陶芸品、伝統品</li>
+                                <li>家庭用品</li>
+                                <li>食料品</li>
+                            </ul>
+
+                            <b>安全な支払い方法</b><br>
+                            オンラインショッピングを安心してお楽しみいただくため、安全かつ便利な支払い方法を提供しています。
+                            <ul style="list-style-position: inside; padding-left: 20px; list-style-type: disc;">
+                                <li>クレジットカード決済</li>
+                                <li>銀行振込</li>
+                                <li>PayPalなどの電子決済サービス</li>
+                            </ul>
+
+                            <b>迅速な配送サービス</b><br>
+                            お客様のご要望に迅速かつ丁寧に対応し、迅速な配送を実現します。
+                            <ul style="list-style-position: inside; padding-left: 20px; list-style-type: disc;">
+                                <li>国内外への配送対応</li>
+                                <li>追跡可能な発送手配</li>
+                                <li>商品の梱包と保護</li>
+                            </ul>
+
+                            
+                        </p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 俺Japonyaだもん. All rights reserved.</p>
+    </footer>
+
+    
+</body>
+</html>
